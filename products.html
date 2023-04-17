@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD Bakery</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    #product-menu {
+      background-image: url('assets/bg.png');
+      background-repeat: repeat;
+      background-size: contain;
+      background-position: center;
+      padding: 100px 0;
+    }
+
+    .product-category {
+      /* background-color: rgb(249, 244, 222); */
+      background-image: linear-gradient(to bottom right, rgb(249, 247, 206), rgb(135, 123, 93));
+      /* Adjust opacity as desired */
+      padding: 30px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.1);
+      /* Add box shadow for depth effect */
+    }
+
+    .product-category h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #333;
+      /* Update text color as desired */
+      display: flex;
+      align-items: center;
+      /* Center align image and text vertically */
+    }
+
+    .product-category img {
+      width: 80px;
+      height: 80px;
+      margin-left: auto;
+      /* Push image to the right side */
+      margin-top: -10px;
+      /* Add negative margin to align vertically with text */
+
+    }
+
+    .table {
+      margin-bottom: 0;
+    }
+
+    .table th,
+    .table td {
+      font-size: 14px;
+      vertical-align: middle;
+      text-align: center;
+      padding: 10px 15px;
+      /* Add padding for better spacing */
+    }
+
+    .table th {
+      font-weight: bold;
+      /* background-color: #f8f9fa; */
+      /* Add background color for table header */
+    }
+
+    .table tbody tr:hover {
+      background-color: #ff00b8;
+      color: #fff;
+
+    }
+    .container {
+      overflow: hidden;
+    }
+  </style>
+
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light shadow bg-nav fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logo.png" alt="logo" class="d-inline-block align-text-top"></a>
+      <button class="navbar-toggler button-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" <span><i class="bi bi-list"
+          id="nav-icon"></i></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="franchise.html">Franchise</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="b2b-service.html">B2B</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="product-menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center fw-bold">Products Menu</h2>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="product-category">
+            <h3 class="mb-3">Premium Pastry Cakes <img src="assets/cake-1.jpg" alt="Cake Icon"
+                class="img-fluid rounded-circle"></h3>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Flavor</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Vanilla</td>
+                  <td>1 kg</td>
+                  <td>450</td>
+                </tr>
+                <tr>
+                  <td>Chocolate</td>
+                  <td>1 kg</td>
+                  <td>500</td>
+                </tr>
+                <tr>
+                  <td>ButterScotch</td>
+                  <td>1 kg</td>
+                  <td>550</td>
+                </tr>
+                <tr>
+                  <td>Honey</td>
+                  <td>1 kg</td>
+                  <td>550</td>
+                </tr>
+                <tr>
+                  <td>Red Velvet</td>
+                  <td>1/2 kg</td>
+                  <td>500</td>
+                </tr>
+                <tr>
+                  <td>BlackForest</td>
+                  <td>1 kg</td>
+                  <td>600</td>
+                </tr>
+                <tr>
+                  <td>Fruite Flavors</td>
+                  <td>1 kg</td>
+                  <td>500</td>
+                </tr>
+                <tr>
+                  <td>Seasonal Flavor</td>
+                  <td>1 kg</td>
+                  <td>600</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="product-category">
+            <h3 class="mb-3">Classic Cakes <img src="assets/cake-2.jpg" alt="Cake Icon"
+                class="img-fluid rounded-circle"></h3>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Flavor</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Plain Cake</td>
+                  <td>1 kg</td>
+                  <td>200</td>
+                </tr>
+                <tr>
+                  <td>Tutti Frutti</td>
+                  <td>1 kg</td>
+                  <td>200</td>
+                </tr>
+                <tr>
+                  <td>Chocolate Tutti Frutti</td>
+                  <td>1 kg</td>
+                  <td>250</td>
+                </tr>
+                <tr>
+                  <td>Vanilla</td>
+                  <td>1 kg</td>
+                  <td>300</td>
+                </tr>
+                <tr>
+                  <td>Fruit Flavors</td>
+                  <td>1 kg</td>
+                  <td>300</td>
+                </tr>
+                <tr>
+                  <td>Chocolate</td>
+                  <td>1 kg</td>
+                  <td>330</td>
+                </tr>
+                <tr>
+                  <td>Honey</td>
+                  <td>1 kg</td>
+                  <td>330</td>
+                </tr>
+                <tr>
+                  <td>Dry Fruit Mix</td>
+                  <td>1 kg</td>
+                  <td>350</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="product-category">
+            <h3 class="mb-3">Spicy <img src="assets/cake-1.jpg" alt="Cake Icon" class="img-fluid rounded-circle"></h3>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Flavor</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Veg Puff</td>
+                  <td>1 Pc</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Veg Roll</td>
+                  <td>1 Pc</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Cheese Roll</td>
+                  <td>1 Pc</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Veg Burger</td>
+                  <td>1 Pc</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>Cheese Burger</td>
+                  <td>1 Pc</td>
+                  <td>50</td>
+                </tr>
+                <tr>
+                  <td>Sandwich</td>
+                  <td>1 Pc</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>Stuffed Bun</td>
+                  <td>1 Pc</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>Pizza</td>
+                  <td>1 Pc</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <td>Paneer Pizza</td>
+                  <td>1 Pc</td>
+                  <td>160</td>
+                </tr>
+                <tr>
+                  <td>Corn Pizza</td>
+                  <td>1 Pc</td>
+                  <td>160</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="product-category">
+            <h3 class="mb-3">Non-veg Spicy <img src="assets/cake-2.jpg" alt="Cake Icon"
+                class="img-fluid rounded-circle"></h3>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Flavor</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Egg Puff</td>
+                  <td>1 Pc</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>Chicken Burger</td>
+                  <td>1 Pc</td>
+                  <td>40</td>
+                </tr>
+                <tr>
+                  <td>Chicken Roll</td>
+                  <td>1 Pc</td>
+                  <td>40</td>
+                </tr>
+                <tr>
+                  <td>Chicken Pizza</td>
+                  <td>1 Pc</td>
+                  <td>200</td>
+                </tr>
+
+                <!-- Add more rows for other flavors of non-veg  Spicy -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="product-category">
+            <h3 class="mb-3">Our Specials <img src="assets/cake-1.jpg" alt="Cake Icon" class="img-fluid rounded-circle">
+            </h3>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Flavor</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Dil Pasand Fruit</td>
+                  <td>1 Roll</td>
+                  <td>50</td>
+                </tr>
+                <tr>
+                  <td>Kova Dil Pasand</td>
+                  <td>1 Roll</td>
+                  <td>60</td>
+                </tr>
+                <tr>
+                  <td>Kova Cake</td>
+                  <td>1 kg</td>
+                  <td>250</td>
+                </tr>
+                <!-- Add more rows for other flavors of cakes -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="product-category">
+            <h3 class="mb-3">Cookies <img src="assets/cake-2.jpg" alt="Cake Icon" class="img-fluid rounded-circle"></h3>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Flavor</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Coconut</td>
+                  <td>1 kg</td>
+                  <td>220</td>
+                </tr>
+                <tr>
+                  <td>Salty</td>
+                  <td>1 kg</td>
+                  <td>220</td>
+                </tr>
+                <tr>
+                  <td>Spicy</td>
+                  <td>1 kg</td>
+                  <td>220</td>
+                </tr>
+                <tr>
+                  <td>Spicy</td>
+                  <td>1 kg</td>
+                  <td>220</td>
+                </tr>
+                <tr>
+                  <td>Benny</td>
+                  <td>1 kg</td>
+                  <td>220</td>
+                </tr>
+                <tr>
+                  <td>Square Benny</td>
+                  <td>1 kg</td>
+                  <td>220</td>
+                </tr>
+                <tr>
+                  <td>Usmaniya Salt</td>
+                  <td>1 kg</td>
+                  <td>240</td>
+                </tr>
+                <tr>
+                  <td>Coconut Crunch</td>
+                  <td>1 kg</td>
+                  <td>300</td>
+                </tr>
+                <tr>
+                  <td>Coconut Cookie</td>
+                  <td>1 kg</td>
+                  <td>300</td>
+                </tr>
+                <tr>
+                  <td>Fruit Cookie</td>
+                  <td>1 kg</td>
+                  <td>300</td>
+                </tr>
+                <tr>
+                  <td>Ragi Cookie</td>
+                  <td>1 kg</td>
+                  <td>300</td>
+                </tr>
+                <tr>
+                  <td>Almond Cookie</td>
+                  <td>1 kg</td>
+                  <td>300</td>
+                </tr>
+                <!-- Add more rows for other flavors of cookies -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="product-category">
+            <h3 class="mb-3">Breads <img src="assets/cake-3.jpg" alt="Cake Icon" class="img-fluid rounded-circle"></h3>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Flavor</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Bun</td>
+                  <td>50g</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>Bun Spicy</td>
+                  <td>50g</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>Bun Special</td>
+                  <td>75g</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Milk Bread</td>
+                  <td>300g</td>
+                  <td>35</td>
+                </tr>
+                <tr>
+                  <td>Milk Bread</td>
+                  <td>500g</td>
+                  <td>50</td>
+                </tr>
+                <tr>
+                  <td>Whole Wheat</td>
+                  <td>500g</td>
+                  <td>70</td>
+                </tr>
+                <tr>
+                  <td>Whole Wheat</td>
+                  <td>300g</td>
+                  <td>55</td>
+                </tr>
+                <tr>
+                  <td>Rusk</td>
+                  <td>1 kg</td>
+                  <td>160</td>
+                </tr>
+                <tr>
+                  <td>Rusk Special</td>
+                  <td>1 kg</td>
+                  <td>200</td>
+                </tr>
+                <!-- Add more rows for other types of breads -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="product-category">
+            <h3 class="mb-3">Snacks <img src="assets/cake-4.jpg" alt="Cake Icon" class="img-fluid rounded-circle"></h3>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Flavor</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Bold Mixture</td>
+                  <td>1 kg</td>
+                  <td>200</td>
+                </tr>
+                <tr>
+                  <td>Nice Mixture</td>
+                  <td>1 kg</td>
+                  <td>240</td>
+                </tr>
+                <tr>
+                  <td>Boondi</td>
+                  <td>1 kg</td>
+                  <td>240</td>
+                <tr>
+                  <td>Murk</td>
+                  <td>1 kg</td>
+                  <td>240</td>
+                </tr>
+                <tr>
+                  <td>Chakodi</td>
+                  <td>1 kg</td>
+                  <td>240</td>
+                </tr>
+                <tr>
+                  <td>Mix Daal</td>
+                  <td>1 kg</td>
+                  <td>300</td>
+                <tr>
+                  <td>Aloo Chips</td>
+                  <td>1 kg</td>
+                  <td>400</td>
+                </tr>
+                <tr>
+                  <td>Finger Chips Aloo</td>
+                  <td>1 kg</td>
+                  <td>420</td>
+                </tr>
+                <tr>
+                  <td>Masala Aloo</td>
+                  <td>1 kg</td>
+                  <td>420</td>
+                </tr>
+                <!-- Add more rows for other flavors of Snacks -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+ <!-- Footer Section -->
+ <footer class="" id="footer">
+  <section class="bg-footer pt-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <h5 class="fw-bold">Quick links</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="about-us.html">About</a></li>
+                      <li><a href="franchise.html">Franchise</a></li>
+                      <li><a href="b2b-service.html">B2B</a></li>
+                      <li><a href="#Menu">Menu</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4">
+                  <h5 class="fw-bold">Contact Us</h5>
+                  <ul class="list-unstyled contact-info">
+                      <li><i class="bi bi-telephone-fill icon-color"></i> +91 9701510604</li>
+                      <li><i class="bi bi-envelope-fill icon-color"></i> info@mdbakery.com</li>
+                      <li><i class="bi bi-geo-alt-fill icon-color"></i> Msme Park Kotipi <br> Hindupur, Andhra
+                          Pradesh -515201
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-md-4">
+                  <h5 class="fw-bold">Follow us</h5>
+                  <ul class="list-unstyled social-icons d-flex">
+                      <li class="me-3"><a href="https://facebook.com/"><i class="bi bi-facebook fb-color"
+                                  style="font-size: xx-large;"></i></a>
+                      </li>
+                      <li class="me-3"><a href="https://twitter.com"><i class="bi bi-twitter twit-color"
+                                  style="font-size: xx-large;"></i></a>
+                      </li>
+                      <li class="me-3"><a href="https://instagram.com"><i class="bi bi-instagram insta-color"
+                                  style="font-size: xx-large;"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section style="background-color: #ff00b8;">
+      <div class="container p-1">
+          <div class="row">
+              <div class="col text-center">
+                  <p class="text-white mb-0">&copy; 2023 MD Bakery. All rights reserved.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+</footer>
+
+
+  <script src="javascript.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
