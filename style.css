@@ -86,8 +86,17 @@ a:focus {
   border-color: #d930ba !important;
 }
 
+.container{
+  overflow: hidden;
+}
 
-
+/* scroll-to-top */
+#scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
 
 /* Navbar */
 .navbar-nav .nav-link.active {
@@ -286,7 +295,13 @@ a:focus {
   transform: translateY(0) scale(1);
 }
 
-
+/* testimonial */
+.testimonial-card {
+  border-top-right-radius: 50px !important;
+  border-top-left-radius: 50px !important;
+  border-bottom-right-radius: 50px !important;
+  border-bottom-left-radius: 50px !important;
+}
 
 /* footer section */
 .bg-footer {
@@ -317,10 +332,4 @@ a:focus {
 }
 
 
-/* testimonial */
-.testimonial-card {
-  border-top-right-radius: 50px !important;
-  border-top-left-radius: 50px !important;
-  border-bottom-right-radius: 50px !important;
-  border-bottom-left-radius: 50px !important;
-}
+
