@@ -86,17 +86,10 @@ a:focus {
   border-color: #d930ba !important;
 }
 
-.container{
+.container {
   overflow: hidden;
 }
 
-/* scroll-to-top */
-#scroll-to-top-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-}
 
 /* Navbar */
 .navbar-nav .nav-link.active {
@@ -177,7 +170,7 @@ a:focus {
     width: 450px;
     height: 400px;
   }
-  
+
 }
 
 /* for mobile screens */
@@ -238,33 +231,33 @@ a:focus {
 
 
 /* Product Section */
-.p-size {
-  max-width: 100%;
-  max-height: 100%;
-  width: 300px;
-  height: 250px;
+
+#products-section {
+  padding: 50px 0;
 }
 
-.p-shape-left {
-  border-bottom-left-radius: 80px;
+.product-item {
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px rgba(250, 149, 238, 0.834);
 }
 
-.p-shape-right {
-  border-bottom-right-radius: 80px;
+.product-item img {
+  border-radius: 30px 30px 0 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
-@media (max-width: 767.98px) {
-  .p-shape-left {
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 0px;
-  }
-
-  .p-size {
-    max-width: 100%;
-    max-height: 100%;
-    width: 250px;
-    height: 200px;
-  }
+.product-title {
+  padding: 15px;
+  background-color: #fbf5fa;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 0 0 30px 30px;
 }
 
 .overlay {
@@ -273,9 +266,8 @@ a:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(254, 197, 223, 0.8);
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
+  background-color: rgba(254, 197, 249, 0.8);
+  border-radius: 30px 30px 30px 30px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -295,13 +287,33 @@ a:focus {
   transform: translateY(0) scale(1);
 }
 
+.btn-gradient {
+  background-image: linear-gradient(to right, #ff00f7, #9500ff);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px 20px;
+  position: relative;
+  animation: blink 1s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.7;
+  }
+}
+
 /* testimonial */
 .testimonial-card {
-  border-top-right-radius: 50px !important;
-  border-top-left-radius: 50px !important;
-  border-bottom-right-radius: 50px !important;
-  border-bottom-left-radius: 50px !important;
+  border-radius: 30px !important;
 }
+
 
 /* footer section */
 .bg-footer {
@@ -332,4 +344,10 @@ a:focus {
 }
 
 
-
+/* scroll-to-top */
+#scroll-to-top-btn {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 999;
+}
