@@ -112,9 +112,9 @@ a:focus {
   background-color: #fff;
 }
 
-.navbar.hidden {
+/* .navbar.hidden {
   display: none;
-}
+} */
 
 @media (min-width: 1200px) {
   .navbar {
@@ -147,8 +147,8 @@ a:focus {
 .h-img-size {
   max-width: 100%;
   max-height: 100%;
-  /* width: auto; */
-  height: 250px;
+  width: 190px;
+  height: 180px;
 }
 
 
@@ -167,7 +167,7 @@ a:focus {
 /* for mobile screens */
 @media (max-width: 767.98px) {
   .about-img {
-    width: 450px;
+    width: 400px;
     height: 400px;
   }
 
@@ -176,7 +176,7 @@ a:focus {
 /* for mobile screens */
 @media (max-width: 576.98px) {
   .about-img {
-    width: 450px;
+    width: 400px;
     height: 400px;
   }
 }

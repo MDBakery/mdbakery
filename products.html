@@ -27,17 +27,18 @@
 
   <style>
     #product-menu {
-      background-image: url('assets/bg.jpg');
+      /* background-image: url('assets/bg.png'); */
+      background: linear-gradient(45deg, #f5deb3, #d2b48c);
       background-repeat: repeat;
       background-size: contain;
       background-position: center;
       padding: 100px 0;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     }
 
     .product-category {
-      /* background-color: rgb(249, 244, 222); */
-      background-image: linear-gradient(to bottom right, rgb(249, 253, 188), rgb(250, 117, 221));
-      /* Adjust opacity as desired */
+      background: linear-gradient(to bottom right, rgb(249, 253, 188), rgb(251, 140, 227));
       padding: 30px;
       margin-bottom: 20px;
       border-radius: 10px;
@@ -90,14 +91,13 @@
       color: #fff;
 
     }
-
   </style>
 
 </head>
 
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light shadow bg-nav fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light shadow bg-body sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
         <img src="assets/logo.png" alt="logo" class="d-inline-block align-text-top"></a>
@@ -140,56 +140,38 @@
       <div class="row mt-4">
         <div class="col-md-6">
           <div class="product-category">
-            <h3 class="mb-3">Premium Pastry Cakes <img src="assets/cake-1.jpg" alt="Cake Icon"
-                class="img-fluid rounded-circle"></h3>
+            <h3 class="mb-3">Pastry Cakes <img src="assets/cake-1.jpg" alt="Cake Icon" class="img-fluid rounded-circle">
+            </h3>
             <table class="table table-bordered">
               <thead>
                 <tr>
                   <th>Flavor</th>
-                  <th>Quantity</th>
-                  <th>Price</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>Vanilla</td>
-                  <td>1 kg</td>
-                  <td>450</td>
                 </tr>
                 <tr>
                   <td>Chocolate</td>
-                  <td>1 kg</td>
-                  <td>500</td>
                 </tr>
                 <tr>
                   <td>ButterScotch</td>
-                  <td>1 kg</td>
-                  <td>550</td>
                 </tr>
                 <tr>
                   <td>Honey</td>
-                  <td>1 kg</td>
-                  <td>550</td>
                 </tr>
                 <tr>
                   <td>Red Velvet</td>
-                  <td>1/2 kg</td>
-                  <td>500</td>
                 </tr>
                 <tr>
                   <td>BlackForest</td>
-                  <td>1 kg</td>
-                  <td>600</td>
                 </tr>
                 <tr>
                   <td>Fruite Flavors</td>
-                  <td>1 kg</td>
-                  <td>500</td>
                 </tr>
                 <tr>
                   <td>Seasonal Flavor</td>
-                  <td>1 kg</td>
-                  <td>600</td>
                 </tr>
               </tbody>
             </table>
@@ -203,50 +185,32 @@
               <thead>
                 <tr>
                   <th>Flavor</th>
-                  <th>Quantity</th>
-                  <th>Price</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>Plain Cake</td>
-                  <td>1 kg</td>
-                  <td>200</td>
                 </tr>
                 <tr>
                   <td>Tutti Frutti</td>
-                  <td>1 kg</td>
-                  <td>200</td>
                 </tr>
                 <tr>
                   <td>Chocolate Tutti Frutti</td>
-                  <td>1 kg</td>
-                  <td>250</td>
                 </tr>
                 <tr>
                   <td>Vanilla</td>
-                  <td>1 kg</td>
-                  <td>300</td>
                 </tr>
                 <tr>
                   <td>Fruit Flavors</td>
-                  <td>1 kg</td>
-                  <td>300</td>
                 </tr>
                 <tr>
                   <td>Chocolate</td>
-                  <td>1 kg</td>
-                  <td>330</td>
                 </tr>
                 <tr>
                   <td>Honey</td>
-                  <td>1 kg</td>
-                  <td>330</td>
                 </tr>
                 <tr>
                   <td>Dry Fruit Mix</td>
-                  <td>1 kg</td>
-                  <td>350</td>
                 </tr>
               </tbody>
             </table>
@@ -258,63 +222,36 @@
           <div class="product-category">
             <h3 class="mb-3">Spicy <img src="assets/cake-1.jpg" alt="Cake Icon" class="img-fluid rounded-circle"></h3>
             <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>Flavor</th>
-                  <th>Quantity</th>
-                  <th>Price</th>
-                </tr>
-              </thead>
               <tbody>
                 <tr>
                   <td>Veg Puff</td>
-                  <td>1 Pc</td>
-                  <td>15</td>
                 </tr>
                 <tr>
                   <td>Veg Roll</td>
-                  <td>1 Pc</td>
-                  <td>15</td>
                 </tr>
                 <tr>
                   <td>Cheese Roll</td>
-                  <td>1 Pc</td>
-                  <td>15</td>
                 </tr>
                 <tr>
                   <td>Veg Burger</td>
-                  <td>1 Pc</td>
-                  <td>20</td>
                 </tr>
                 <tr>
                   <td>Cheese Burger</td>
-                  <td>1 Pc</td>
-                  <td>50</td>
                 </tr>
                 <tr>
                   <td>Sandwich</td>
-                  <td>1 Pc</td>
-                  <td>20</td>
                 </tr>
                 <tr>
                   <td>Stuffed Bun</td>
-                  <td>1 Pc</td>
-                  <td>20</td>
                 </tr>
                 <tr>
                   <td>Pizza</td>
-                  <td>1 Pc</td>
-                  <td>130</td>
                 </tr>
                 <tr>
                   <td>Paneer Pizza</td>
-                  <td>1 Pc</td>
-                  <td>160</td>
                 </tr>
                 <tr>
                   <td>Corn Pizza</td>
-                  <td>1 Pc</td>
-                  <td>160</td>
                 </tr>
               </tbody>
             </table>
@@ -325,33 +262,18 @@
             <h3 class="mb-3">Non-veg Spicy <img src="assets/cake-2.jpg" alt="Cake Icon"
                 class="img-fluid rounded-circle"></h3>
             <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>Flavor</th>
-                  <th>Quantity</th>
-                  <th>Price</th>
-                </tr>
-              </thead>
               <tbody>
                 <tr>
                   <td>Egg Puff</td>
-                  <td>1 Pc</td>
-                  <td>20</td>
                 </tr>
                 <tr>
                   <td>Chicken Burger</td>
-                  <td>1 Pc</td>
-                  <td>40</td>
                 </tr>
                 <tr>
                   <td>Chicken Roll</td>
-                  <td>1 Pc</td>
-                  <td>40</td>
                 </tr>
                 <tr>
                   <td>Chicken Pizza</td>
-                  <td>1 Pc</td>
-                  <td>200</td>
                 </tr>
 
                 <!-- Add more rows for other flavors of non-veg  Spicy -->
@@ -366,28 +288,15 @@
             <h3 class="mb-3">Our Specials <img src="assets/cake-1.jpg" alt="Cake Icon" class="img-fluid rounded-circle">
             </h3>
             <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>Flavor</th>
-                  <th>Quantity</th>
-                  <th>Price</th>
-                </tr>
-              </thead>
               <tbody>
                 <tr>
-                  <td>Dil Pasand Fruit</td>
-                  <td>1 Roll</td>
-                  <td>50</td>
+                  <td>Kova Cake</td>
+                </tr>
+                <tr>
+                  <td>Fruit Dil Pasand</td>
                 </tr>
                 <tr>
                   <td>Kova Dil Pasand</td>
-                  <td>1 Roll</td>
-                  <td>60</td>
-                </tr>
-                <tr>
-                  <td>Kova Cake</td>
-                  <td>1 kg</td>
-                  <td>250</td>
                 </tr>
                 <!-- Add more rows for other flavors of cakes -->
               </tbody>
@@ -398,73 +307,42 @@
           <div class="product-category">
             <h3 class="mb-3">Cookies <img src="assets/cake-2.jpg" alt="Cake Icon" class="img-fluid rounded-circle"></h3>
             <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>Flavor</th>
-                  <th>Quantity</th>
-                  <th>Price</th>
-                </tr>
-              </thead>
               <tbody>
                 <tr>
                   <td>Coconut</td>
-                  <td>1 kg</td>
-                  <td>220</td>
                 </tr>
                 <tr>
                   <td>Salty</td>
-                  <td>1 kg</td>
-                  <td>220</td>
                 </tr>
                 <tr>
                   <td>Spicy</td>
-                  <td>1 kg</td>
-                  <td>220</td>
                 </tr>
                 <tr>
-                  <td>Spicy</td>
-                  <td>1 kg</td>
-                  <td>220</td>
+                  <td>Spicy Crunch</td>
                 </tr>
                 <tr>
                   <td>Benny</td>
-                  <td>1 kg</td>
-                  <td>220</td>
                 </tr>
                 <tr>
                   <td>Square Benny</td>
-                  <td>1 kg</td>
-                  <td>220</td>
                 </tr>
                 <tr>
                   <td>Usmaniya Salt</td>
-                  <td>1 kg</td>
-                  <td>240</td>
                 </tr>
                 <tr>
                   <td>Coconut Crunch</td>
-                  <td>1 kg</td>
-                  <td>300</td>
                 </tr>
                 <tr>
                   <td>Coconut Cookie</td>
-                  <td>1 kg</td>
-                  <td>300</td>
                 </tr>
                 <tr>
                   <td>Fruit Cookie</td>
-                  <td>1 kg</td>
-                  <td>300</td>
                 </tr>
                 <tr>
                   <td>Ragi Cookie</td>
-                  <td>1 kg</td>
-                  <td>300</td>
                 </tr>
                 <tr>
                   <td>Almond Cookie</td>
-                  <td>1 kg</td>
-                  <td>300</td>
                 </tr>
                 <!-- Add more rows for other flavors of cookies -->
               </tbody>
@@ -477,58 +355,33 @@
           <div class="product-category">
             <h3 class="mb-3">Breads <img src="assets/cake-3.jpg" alt="Cake Icon" class="img-fluid rounded-circle"></h3>
             <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>Flavor</th>
-                  <th>Quantity</th>
-                  <th>Price</th>
-                </tr>
-              </thead>
               <tbody>
                 <tr>
                   <td>Bun</td>
-                  <td>50g</td>
-                  <td>5</td>
                 </tr>
                 <tr>
                   <td>Bun Spicy</td>
-                  <td>50g</td>
-                  <td>7</td>
                 </tr>
                 <tr>
                   <td>Bun Special</td>
-                  <td>75g</td>
-                  <td>8</td>
                 </tr>
                 <tr>
                   <td>Milk Bread</td>
-                  <td>300g</td>
-                  <td>35</td>
                 </tr>
                 <tr>
-                  <td>Milk Bread</td>
-                  <td>500g</td>
-                  <td>50</td>
+                  <td>Milk Bread Special</td>
                 </tr>
                 <tr>
                   <td>Whole Wheat</td>
-                  <td>500g</td>
-                  <td>70</td>
                 </tr>
                 <tr>
                   <td>Whole Wheat</td>
-                  <td>300g</td>
-                  <td>55</td>
                 </tr>
                 <tr>
                   <td>Rusk</td>
-                  <td>1 kg</td>
-                  <td>160</td>
                 </tr>
                 <tr>
                   <td>Rusk Special</td>
-                  <td>1 kg</td>
-                  <td>200</td>
                 </tr>
                 <!-- Add more rows for other types of breads -->
               </tbody>
@@ -539,56 +392,31 @@
           <div class="product-category">
             <h3 class="mb-3">Snacks <img src="assets/cake-4.jpg" alt="Cake Icon" class="img-fluid rounded-circle"></h3>
             <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>Flavor</th>
-                  <th>Quantity</th>
-                  <th>Price</th>
-                </tr>
-              </thead>
               <tbody>
                 <tr>
-                  <td>Bold Mixture</td>
-                  <td>1 kg</td>
-                  <td>200</td>
+                  <td>BigSize Mixture</td>
                 </tr>
                 <tr>
                   <td>Nice Mixture</td>
-                  <td>1 kg</td>
-                  <td>240</td>
                 </tr>
                 <tr>
                   <td>Boondi</td>
-                  <td>1 kg</td>
-                  <td>240</td>
                 <tr>
-                  <td>Murk</td>
-                  <td>1 kg</td>
-                  <td>240</td>
+                  <td>Murks</td>
                 </tr>
                 <tr>
                   <td>Chakodi</td>
-                  <td>1 kg</td>
-                  <td>240</td>
                 </tr>
                 <tr>
-                  <td>Mix Daal</td>
-                  <td>1 kg</td>
-                  <td>300</td>
+                  <td>Mixed Daals</td>
                 <tr>
                   <td>Aloo Chips</td>
-                  <td>1 kg</td>
-                  <td>400</td>
                 </tr>
                 <tr>
-                  <td>Finger Chips Aloo</td>
-                  <td>1 kg</td>
-                  <td>420</td>
+                  <td>Aloo Finger Chips</td>
                 </tr>
                 <tr>
-                  <td>Masala Aloo</td>
-                  <td>1 kg</td>
-                  <td>420</td>
+                  <td>Aloo Masala Chips</td>
                 </tr>
                 <!-- Add more rows for other flavors of Snacks -->
               </tbody>
@@ -599,58 +427,58 @@
     </div>
   </section>
 
-  
- <!-- Footer Section -->
- <footer class="" id="footer">
-  <section class="bg-footer pt-5">
+
+  <!-- Footer Section -->
+  <footer class="" id="footer">
+    <section class="bg-footer pt-5">
       <div class="container">
-          <div class="row">
-              <div class="col-md-4">
-                  <h5 class="fw-bold">Quick links</h5>
-                  <ul class="list-unstyled">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="about-us.html">About</a></li>
-                      <li><a href="franchise.html">Franchise</a></li>
-                      <li><a href="b2b-service.html">B2B</a></li>
-                      <li><a href="contact.html">Contact</a></li>
-                  </ul>
-              </div>
-              <div class="col-md-4">
-                  <h5 class="fw-bold">Contact Us</h5>
-                  <ul class="list-unstyled contact-info">
-                      <li><i class="bi bi-telephone-fill icon-color"></i> +91 9701510604</li>
-                      <li><i class="bi bi-envelope-fill icon-color"></i> info@mdbakery.com</li>
-                      <li><i class="bi bi-geo-alt-fill icon-color"></i> Msme Park Kotipi <br> Hindupur, Andhra
-                          Pradesh -515201
-                      </li>
-                  </ul>
-              </div>
-              <div class="col-md-4">
-                  <h5 class="fw-bold">Follow us</h5>
-                  <ul class="list-unstyled social-icons d-flex">
-                      <li class="me-3"><a href="https://facebook.com/"><i class="bi bi-facebook fb-color"
-                                  style="font-size: xx-large;"></i></a>
-                      </li>
-                      <li class="me-3"><a href="https://twitter.com"><i class="bi bi-twitter twit-color"
-                                  style="font-size: xx-large;"></i></a>
-                      </li>
-                      <li class="me-3"><a href="https://instagram.com"><i class="bi bi-instagram insta-color"
-                                  style="font-size: xx-large;"></i></a></li>
-                  </ul>
-              </div>
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="fw-bold">Quick links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">About</a></li>
+              <li><a href="franchise.html">Franchise</a></li>
+              <li><a href="b2b-service.html">B2B</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
           </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold">Contact Us</h5>
+            <ul class="list-unstyled contact-info">
+              <li><i class="bi bi-telephone-fill icon-color"></i> +91 9701510604</li>
+              <li><i class="bi bi-envelope-fill icon-color"></i> info@mdbakery.com</li>
+              <li><i class="bi bi-geo-alt-fill icon-color"></i> Msme Park Kotipi <br> Hindupur, Andhra
+                Pradesh -515201
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold">Follow us</h5>
+            <ul class="list-unstyled social-icons d-flex">
+              <li class="me-3"><a href="https://facebook.com/"><i class="bi bi-facebook fb-color"
+                    style="font-size: xx-large;"></i></a>
+              </li>
+              <li class="me-3"><a href="https://twitter.com"><i class="bi bi-twitter twit-color"
+                    style="font-size: xx-large;"></i></a>
+              </li>
+              <li class="me-3"><a href="https://instagram.com"><i class="bi bi-instagram insta-color"
+                    style="font-size: xx-large;"></i></a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-  </section>
-  <section style="background-color: #ff00b8;">
+    </section>
+    <section style="background-color: #ff00b8;">
       <div class="container p-1">
-          <div class="row">
-              <div class="col text-center">
-                  <p class="text-white mb-0">&copy; 2023 MD Bakery. All rights reserved.</p>
-              </div>
+        <div class="row">
+          <div class="col text-center">
+            <p class="text-white mb-0">&copy; 2023 MD Bakery. All rights reserved.</p>
           </div>
+        </div>
       </div>
-  </section>
-</footer>
+    </section>
+  </footer>
 
 
   <script src="./javaScript.js"></script>
